@@ -1,0 +1,1017 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+/*desktop OVER 992px*/
+
+/**************
+****** DESKTOP HEADER*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#logo {
+  width: 100px;
+  height: fit-content;
+  position: relative;
+  margin: 50px 0 0 65px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links {
+  padding: 50px;
+  width: 50%;
+}
+
+.nav-links:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc !important;
+  font-size: 20px;
+}
+
+/**************
+****** 
+DESKTOP SEARCH
+*/
+#search h2,
+#search h4 {
+  padding: 20px 0 0 50px;
+}
+
+.b-header {
+  font-weight: 600;
+}
+
+.m-header {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.header {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+form {
+  padding: 20px 0 0 50px;
+  position: relative;
+  display: flex;
+  margin-top: 15px;
+}
+
+#icon-box {
+  width: 50px;
+  height: auto;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+}
+
+#icon {
+  color: black;
+  background-color: #f2f2f2;
+  position: relative;
+  top: 15px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  position: relative;
+  border: 2px solid #f2f2f2;
+  border-right: none;
+}
+
+#btn-rch {
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  padding: 15px;
+  position: relative;
+  right: 5px;
+  color: #ffff;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+}
+
+#btn-rch-mb,
+#search-icon {
+  display: none;
+}
+
+/***************
+******
+DESKTOP FILTRES*/
+#section-filtres {
+  margin: 25px 0 0 50px;
+  height: fit-content;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#filtres-header {
+  padding: 15px 10px 0 0;
+}
+
+.filtre {
+  display: flex;
+  padding: 0 10px 10px 0;
+  margin-right: -35px;
+}
+.f-txt {
+  border: 3px solid #f2f2f2;
+  border-radius: 25px;
+  padding: 13px 20px 10px 58px;
+  height: 50px;
+  transform: translateX(-50px);
+  z-index: -1;
+}
+
+.filtre:hover {
+  color: #0065fc;
+  cursor: pointer;
+}
+
+.filtre-box {
+  width: 50px;
+  height: 50px;
+  background-color: #deebff;
+  color: #0065fc;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.filtres-icon {
+  transform: translateY(14px);
+  font-size: 20px;
+}
+
+/***************
+****** 
+DESKTOP  INFO*/
+#info {
+  font-size: medium;
+  margin: 25px 0 0 50px;
+  display: flex;
+  width: 90%;
+}
+
+#info-icon {
+  font-size: 30px;
+  background: rgb(0, 101, 252);
+  background: radial-gradient(
+    circle,
+    rgba(0, 101, 252, 1) 29%,
+    rgba(242, 242, 242, 1) 62%
+  );
+  border-radius: 30px;
+  color: #ffff;
+  padding: 1px;
+  margin-right: 10px;
+  transform: translateY(-6px);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+/***************
+******
+DESKTOP HEBERGEMENT*/
+#hebergements {
+  background-color: #f2f2f2;
+  width: 62%;
+  border-radius: 30px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hebergements .section-header {
+  margin-left: 10px;
+}
+
+.section-header {
+  padding-bottom: 15px;
+}
+
+#hebergement_cards_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 0 200px;
+  max-width: 300px;
+  height: 185px;
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px 10px;
+  box-shadow: #d5d4d4 0px 5px 10px;
+}
+
+.card:hover {
+  box-shadow: gray 0px 5px 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hotel-picture {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.card_text {
+  padding: 5px 5px 0 5px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-name {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.details {
+  font-weight: 300;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.stars {
+  font-size: 11px;
+  color: #0065fc;
+  margin-bottom: 2px;
+}
+
+#afficher {
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+#afficher:hover {
+  font-size: 22px;
+}
+
+/***************
+******
+DESKTOP ASIDE*/
+#populaires {
+  width: 30%;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pop_header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+#pop_icon {
+  font-size: 22px;
+}
+#pop-cards-section {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pop-card {
+  width: 100%;
+  height: 145px;
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px 0;
+  box-shadow: #d5d4d4 0px 5px 10px;
+}
+
+.pop-card:hover {
+  box-shadow: gray 0px 5px 10px;
+}
+
+.pop-card a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+
+.pop-hotel-picture {
+  width: 40%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  margin-right: 10px;
+}
+
+.pop-stars {
+  font-size: 11px;
+  color: #0065fc;
+}
+
+.pop-card-text {
+  width: 60%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/***************
+******
+DESKTOP ACTIVITIES*/
+#activities {
+  width: 100%;
+  height: fit-content;
+  background-color: #ffff;
+  padding: 40px 30px;
+}
+
+#activities h2 {
+  padding-left: 20px;
+}
+
+#activity-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tall-card {
+  width: 22%;
+  height: 360px;
+}
+
+.tall-card:hover {
+  box-shadow: gray 0px 5px 10px;
+}
+
+.small-cards {
+  width: 22%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a_card {
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: #f2f2f2 0px 5px 10px;
+  margin: 15px;
+}
+
+.a_card:hover {
+  box-shadow: gray 0px 5px 10px;
+  cursor: pointer;
+}
+
+.tall_img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.medium_img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.small_img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activity-name {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/***************
+******
+DESKTOP FOOTER*/
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  height: 180px;
+}
+
+.footer-s {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  margin: 10px;
+}
+
+.f-header {
+  padding-bottom: 10px;
+}
+
+.links {
+  height: 100px;
+}
+
+.footer-s p {
+  padding-bottom: 10px;
+}
+
+.footer-s a {
+  font-size: 12px;
+  word-spacing: 2px;
+  color: black;
+  text-decoration: none;
+  padding: 40px 0;
+}
+
+.links a:hover {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+/***************
+******tablets BETWEEN 992px and 768px**************
+*******/
+@media only screen and (max-width: 992px) {
+  /**************
+****** TABLET HEADER*/
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  #logo {
+    width: 140px;
+    margin: 60px 0 60px 0;
+  }
+
+  .nav-links {
+    padding: 20px 50px 20px 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 5px solid #f2f2f2;
+  }
+
+  .nav-links:hover {
+    border-top: none;
+    border-bottom: 5px solid #0065fc;
+    font-weight: 400;
+    font-size: 27px;
+  }
+
+  /**************
+****** TABLET SEARCH*/
+  #search {
+    padding: 52px 0 0 20px;
+  }
+
+  .header {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #sub_header {
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    padding-bottom: 40px;
+  }
+
+  #icon-box {
+    width: 60px;
+    border-radius: 18px 0 0 18px;
+  }
+
+  #icon {
+    font-size: 25px;
+    top: 10px;
+  }
+
+  input {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  /**************
+****** TABLET FILTRES*/
+  #section-filtres {
+    padding: 40px 0 0 20px;
+  }
+
+  #section-filtres h4 {
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filtre-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .filtres-icon {
+    transform: translateY(14px);
+    font-size: 22px;
+  }
+
+  .f-txt {
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 12px 20px 10px 70px;
+  }
+
+  /**************
+****** TABLET INFO*/
+  #info {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  #info-icon {
+    font-size: 40px;
+    border-radius: 40px;
+    padding: 2px;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  /**************
+****** TABLET POPULAIRES*/
+  #populaires {
+    width: 100%;
+    border-radius: 0;
+    order: 1;
+  }
+
+  #populaires .b-header {
+    padding-left: 20px;
+  }
+
+  .b-header {
+    font-size: 30px;
+  }
+
+  #pop_icon {
+    font-size: 30px;
+  }
+
+  #pop-cards-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pop-card {
+    width: 25%;
+    height: 310px;
+    margin: 20px;
+  }
+
+  .pop-card a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .pop-hotel-picture {
+    width: 100%;
+    height: 170px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .pop-card-text {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .details {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .pop-stars,
+  .stars {
+    font-size: 15px;
+  }
+
+  /**************
+****** TABLET HEBERGEMENTS*/
+  #hebergements {
+    background-color: #ffff;
+    border-radius: 0;
+    width: 100%;
+    order: 2;
+  }
+
+  #hebergements .section-header {
+    padding-left: 20px;
+  }
+
+  .card {
+    flex: unset;
+    min-width: 40%;
+    height: 240px;
+  }
+
+  .hotel-picture {
+    width: 100%;
+    height: 60%;
+  }
+
+  #afficher {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+
+  #afficher:hover {
+    font-size: 25px;
+  }
+
+  #activities {
+    order: 3;
+  }
+
+  /**************
+****** TABLET ACTIVITIES*/
+  #activity-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tall-card {
+    width: 45%;
+    height: auto;
+  }
+
+  .small-cards {
+    width: 45%;
+    height: auto;
+  }
+
+  .activity-name {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /**************
+****** TABLET FOOTER*/
+  footer {
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .f-header {
+    font-size: 20px;
+  }
+
+  .footer-s a {
+    font-size: 15px;
+  }
+
+  .links a:hover {
+    font-size: 20px;
+  }
+}
+
+/***************
+******phones UNDER 768**************
+*******/
+@media only screen and (max-width: 768px) {
+  /**************
+****** PHONE HEADER*/
+  #logo {
+    width: 120px;
+    margin: 30px 0 60px 0;
+  }
+
+  .nav-links {
+    font-size: 20px;
+  }
+
+  .nav-links:hover {
+    font-size: 22px;
+  }
+  /**************
+****** PHONE SEARCH*/
+  #search {
+    padding: 10px 0;
+  }
+
+  #search h2,
+  #search h4 {
+    padding: 20px 30px 0 20px;
+  }
+
+  form {
+    padding: 20px 20px;
+  }
+  #icon-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  #icon {
+    font-size: 30px;
+    top: 10px;
+  }
+
+  input {
+    font-size: 25px;
+    height: 60px;
+  }
+
+  #btn-rch {
+    display: none;
+  }
+
+  #btn-rch-mb {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #0065fc;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    left: -10px;
+  }
+
+  #search-icon {
+    display: inline;
+    color: #ffff;
+    font-size: x-large;
+  }
+  /**************
+****** PHONE FILTRES*/
+  #section-filtres {
+    margin: 20px;
+    padding: 0;
+  }
+
+  #section-filtres h4 {
+    font-size: 30px;
+  }
+
+  .filtre-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .filtres-icon {
+    transform: translateY(18px);
+    font-size: 25px;
+  }
+
+  .f-txt {
+    height: 60px;
+    border-radius: 60px;
+    font-size: 20px;
+    padding: 15px 20px 10px 70px;
+  }
+  /**************
+****** PHONE INFO*/
+  #info {
+    font-size: 20px;
+    margin: 30px 0px 50px 20px;
+    padding: 0;
+  }
+
+  #info-icon {
+    font-size: 40px;
+    border-radius: 40px;
+    padding: 2px;
+  }
+
+  /**************
+****** PHONE POPULAIRES*/
+  #pop-cards-section {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+
+  #populaires .b-header {
+    padding-left: 0px;
+  }
+
+  .b-header {
+    font-size: 26px;
+  }
+
+  #pop_icon {
+    font-size: 25px;
+  }
+
+  .pop-card {
+    height: 170px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .pop-card a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .pop-hotel-picture {
+    width: 40%;
+    height: 160px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .pop-card-text {
+    width: 60%;
+    height: 160px;
+  }
+
+  .hotel-name {
+    font-size: 20px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+
+  .pop-stars,
+  .stars {
+    font-size: 18px;
+  }
+
+  /**************
+****** PHONE HEBERGEMENT*/
+  #hebergements {
+    background-color: white;
+    padding: 20px;
+  }
+
+  #hebergements .b-header {
+    padding: 8px 0px 5px 0px;
+  }
+
+  .card {
+    height: 260px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: #f2f2f2 0px 5px 10px;
+  }
+
+  .card_text {
+    padding: 10px;
+  }
+
+  .hotel-picture {
+    width: 100%;
+    height: 60%;
+  }
+
+  #afficher {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  #afficher:hover {
+    font-size: 22px;
+  }
+
+  /**************
+****** PHONE ACTIVITIES*/
+  #activities {
+    padding: 50px 0;
+  }
+  #activities h2 {
+    margin-left: 5%;
+  }
+  #activity-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tall-card,
+  .medium_card,
+  .small_card {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .small-cards {
+    width: 100%;
+    align-items: center;
+  }
+
+  .tall_img,
+  .medium_img,
+  .small_img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .activity-name {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+  }
+
+  /**************
+****** PHONE FOOTER*/
+  footer {
+    background-color: #f2f2f2;
+    flex-direction: column;
+    height: auto;
+    padding: 40px 40px 0 60px;
+  }
+
+  .footer-s {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .f-header {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  .links {
+    height: auto;
+  }
+
+  .footer-s a {
+    font-size: 20px;
+  }
+
+  .footer-s p {
+    padding: 10px 0;
+  }
+
+  .links a:hover {
+    font-size: 22px;
+  }
+}
